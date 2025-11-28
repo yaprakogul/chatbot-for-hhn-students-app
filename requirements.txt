@@ -5,3 +5,5 @@ faiss-cpu
 streamlit
 pypdf
 python-dotenv
+networkx
+networkx
