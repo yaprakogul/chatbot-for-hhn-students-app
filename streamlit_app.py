@@ -1,12 +1,17 @@
 import os
 import re
 import streamlit as st
+import os
+import streamlit as st
 
 from rag.runtime_qa import answer_query
 from router.router import load_graph, rephrase_route, route_b2b 
 from router.router_utils import px_to_m, px_to_min 
 from router.router import load_graph, route_b2b, rephrase_route
 
+for k in ["OPENAI_API_KEY", "QDRANT_URL", "QDRANT_COLLECTION", "GEN_MODEL", "EMBED_MODEL"]:
+    if k in st.secrets:
+        os.environ[k] = st.secrets[k]
 
 @st.cache_resource
 def _boot_router():
