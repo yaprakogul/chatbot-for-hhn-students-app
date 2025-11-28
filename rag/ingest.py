@@ -1,4 +1,3 @@
-# rag/ingest.py
 import os
 import glob
 import json
@@ -21,10 +20,10 @@ STORE_DIR = "data/store"            # lokal yedek (npz + meta)
 EMBED_MODEL = "text-embedding-3-large"
 BATCH_SIZE = 64
 # Qdrant yapılandırması
-USE_QDRANT = True  # Qdrant kullanmak istemezsen False yapabilirsin
-QDRANT_URL = "http://localhost:6333"
-QDRANT_API_KEY = None
-QDRANT_COLLECTION = "hhn_knowledge"
+USE_QDRANT = os.getenv("USE_QDRANT", "0") == "1"
+QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", "") or None
+QDRANT_COLLECTION = os.getenv("QDRANT_COLLECTION", "hhn_knowledge")
 
 # ---------- Util ----------
 def _ensure_dir(path: str) -> None:
@@ -208,7 +207,7 @@ def build_store() -> None:
     save_local_store(vectors, rows)
 
     # --- Qdrant'a yükle (isteğe bağlı) ---
-    if _env_true("USE_QDRANT", "1"):
+    if USE_QDRANT:
         try:
             upload_to_qdrant(vectors, rows)
         except Exception as e:

@@ -1,4 +1,3 @@
-# rag/runtime_qa.py
 import os, json
 from typing import List, Dict, Tuple
 import numpy as np
@@ -30,6 +29,11 @@ def _embed_query(text: str) -> np.ndarray:
     vec = np.array(resp.data[0].embedding, dtype="float32")
     return vec
 
+def retrieve_docs(query: str, k: int = 5) -> List[Dict]:
+    if USE_QDRANT:
+        return _retrieve_qdrant(query, k)
+    else:
+        return _retrieve_local(query, k)
 
 # --------------- Local store ---------------
 def _load_local_store() -> None:

@@ -6,4 +6,4 @@ streamlit
 pypdf
 python-dotenv
 networkx
-qdrant-client
+qdrant-client==1.15.1
