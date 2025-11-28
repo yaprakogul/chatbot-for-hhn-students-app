@@ -1,0 +1,7 @@
+openai>=1.50.0
+tiktoken
+chromadb
+faiss-cpu
+streamlit
+pypdf
+python-dotenv

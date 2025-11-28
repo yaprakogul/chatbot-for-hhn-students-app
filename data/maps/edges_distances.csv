@@ -1,0 +1,47 @@
+from,to,campus,distance_px,time_min,path_type,accessible,notes
+n_tc_A_north,n_tc_B_main,TechCampus,12.1,,indoor,true,Indoor corridor A north → B
+n_tc_A_north,n_tc_E_west,TechCampus,50.1,,indoor,true,Indoor link A north → E west
+n_tc_F_main,n_tc_E_east,TechCampus,9.1,,indoor,true,Indoor link F main → E east
+n_tc_E_west,n_tc_E_east,TechCampus,70.2,,indoor,true,Internal passage across E
+n_tc_A_south,n_tc_A_north,TechCampus,46.9,,indoor,true,Internal connection within Building A
+n_tc_A_north,n_tc_D_main,TechCampus,29.5,,indoor,true,Indoor corridor A north ↔ D
+n_tc_E_main,n_tc_E_west,TechCampus,,,indoor,true,Internal corridor E main ↔ west
+n_tc_E_main,n_tc_E_east,TechCampus,,,indoor,true,Internal corridor E main ↔ east
+n_tc_A_south,n_tc_roundabout,TechCampus,298.8,,footpath,true,From A south to roundabout
+n_tc_roundabout,n_tc_C_main,TechCampus,212.6,,footpath,true,Roundabout → C
+n_tc_roundabout,n_tc_D_main,TechCampus,290.8,,footpath,true,Roundabout → D (lecture halls)
+n_tc_roundabout,n_tc_L_main,TechCampus,74.7,,footpath,true,Roundabout → L
+n_tc_L_main,n_tc_Y_main,TechCampus,,,sidewalk,true,L → Y via parking
+n_tc_Y_main,n_tc_A_south,TechCampus,,,sidewalk,true,Y → A south via main road
+n_tc_B_main,n_tc_C_main,TechCampus,72.6,,footpath,true,Direct outdoor path B → C
+n_tc_C_main,n_tc_B_main,TechCampus,72.6,,footpath,true,Direct outdoor path C → B
+n_tc_B_main,n_tc_G_main,TechCampus,123.1,,footpath,true,Direct outdoor path B → G
+n_tc_G_main,n_tc_B_main,TechCampus,123.1,,footpath,true,Direct outdoor path G → B
+n_bc_6_main,n_bc_7_main,BildungsCampus,17.5,,sidewalk,true,From Building 6 (Aula) to Building 7 (aim)
+n_bc_7_main,n_bc_8_main,BildungsCampus,43.3,,sidewalk,true,From Building 7 (aim) to Building 8 (Mensa)
+n_bc_8_main,n_bc_9_main,BildungsCampus,26.9,,sidewalk,true,From Building 8 (Mensa) to Building 9 (DSS/SCS/TUM)
+n_bc_9_main,n_bc_11_main,BildungsCampus,24.4,,sidewalk,true,From Building 9 to Building 11 (Campus Founders)
+n_bc_11_main,n_bc_13_main,BildungsCampus,38.8,,sidewalk,true,From Building 11 to Building 13 (DHBW CAS
+n_bc_13_main,n_bc_12_main,BildungsCampus,15.1,,sidewalk,true,From Building 13 (Library/CAS) to Building 12 (HHN)
+n_bc_12_main,n_bc_15_main,BildungsCampus,39.0,,sidewalk,true,From Building 12 (HHN) to Building 15 (Auditorium/Admin)
+n_bc_15_main,n_bc_17_main,BildungsCampus,23.0,,sidewalk,true,From Building 15 to Building 17 (Cafeteria)
+n_bc_14_main,n_bc_15_main,BildungsCampus,29.0,,sidewalk,true,From Building 14 (Seminar rooms) to Building 15
+n_bc_14_main,n_bc_17_main,BildungsCampus,24.8,,sidewalk,true,From Building 14 to Building 17 (Student cafeteria)
+n_bc_15_main,n_bc_16_main,BildungsCampus,,,sidewalk,true,From Building 15 to Building 16 (Experimenta access)
+n_bc_7_main,n_bc_gate,BildungsCampus,59.8,,crosswalk,true,Main entrance from Europaplatz roundabout
+n_bc_10_main,n_bc_12_main,BildungsCampus,37.7,,sidewalk,true,Direct sidewalk between V (10) and N (12)
+n_bc_12_main,n_bc_10_main,BildungsCampus,37.7,,sidewalk,true,Direct sidewalk between N (12) and V (10)
+n_bc_12_main,n_bc_14_main,BildungsCampus,48.6,,sidewalk,true,Direct east-side path N (12) → T (14)
+n_bc_14_main,n_bc_12_main,BildungsCampus,48.6,,sidewalk,true,Direct east-side path T (14) → N (12)
+n_bc_12_main,n_bc_15_main,BildungsCampus,39.0,,sidewalk,true,Direct connection N (12) → Building 15
+n_bc_15_main,n_bc_12_main,BildungsCampus,39.0,,sidewalk,true,Direct connection Building 15 → N (12)
+n_bc_14_main,n_bc_17_main,BildungsCampus,24.8,,sidewalk,true,Direct sidewalk between T (14) and S (17)
+n_bc_17_main,n_bc_14_main,BildungsCampus,24.8,,sidewalk,true,Direct sidewalk between S (17) and T (14)
+n_bc_1_main,n_bc_2_main,BildungsCampus,18.9,,sidewalk,true,From Building 1 (Forum) to Building 2 (GGS/TUM)
+n_bc_2_main,n_bc_3_main,BildungsCampus,37.2,,sidewalk,true,From Building 2 to Building 3 (DHBW/experimenta)
+n_bc_3_main,n_bc_4_main,BildungsCampus,38.1,,sidewalk,true,From Building 3 to Building 4 (DHBW)
+n_bc_4_main,n_bc_5_main,BildungsCampus,19.3,,sidewalk,true,From Building 4 to Building 5 (DHBW)
+n_bc_5_main,n_bc_9_main,BildungsCampus,150.8,,sidewalk,true,From Building 5 to Building 9 (Fraunhofer/DSS)
+n_bc_9_main,n_bc_10_main,BildungsCampus,47.0,,stairs,false,Stairs connecting Building 9 to Building 10
+n_bc_10_main,n_bc_mid_j1,BildungsCampus,45.5,,sidewalk,true,From Building 10 to central junction
+n_bc_mid_j1,n_bc_12_main,BildungsCampus,75.8,,sidewalk,true,From central junction to Building 12

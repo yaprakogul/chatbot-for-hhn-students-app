@@ -1,0 +1,16 @@
+# env & secrets
+.env
+*.env
+
+# Python cache / venv
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+data/raw/
+data/cleaned/
+rag/store/
+
+.DS_Store
+*.log

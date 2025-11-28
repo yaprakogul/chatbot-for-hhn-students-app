@@ -1,0 +1,33 @@
+id,campus,label,type,x,y,building_code,entrance,accessible,notes
+# ==== TECHCAMPUS ====
+n_tc_A_south,TechCampus,Building A South Entrance,entrance,809,431,A,main,true,Main entrance facing the yard
+n_tc_A_north,TechCampus,Building A North Entrance,entrance,783,392,A,side,true,Entrance facing E/F/G cluster
+n_tc_B_main,TechCampus,Building B Main Entrance,entrance,778,403,B,main,true,Connected to A by indoor corridor
+n_tc_C_main,TechCampus,Building C Main Entrance,entrance,742,340,C,main,true,South block
+n_tc_D_main,TechCampus,Building D Main Entrance,entrance,809,406,D,main,true,Lecture halls
+n_tc_E_west,TechCampus,Building E West Entrance,entrance,805,347,E,side,true,Entrance toward A
+n_tc_E_east,TechCampus,Building E East Entrance,entrance,826,280,E,side,true,Entrance toward F
+n_tc_F_main,TechCampus,Building F Main Entrance,entrance,835,281,F,main,true,IT labs / PC pools
+n_tc_G_main,TechCampus,Building G Main Entrance,entrance,734,288,G,main,true,Maker Space / research
+n_tc_L_main,TechCampus,Building L Main Entrance,entrance,483,266,L,main,true,Remote Collaboration Lab
+n_tc_roundabout,TechCampus,Roundabout Junction,junction,530,324,,,-,true,Central outdoor junction
+
+# ==== BILDUNGSCAMPUS ====
+n_bc_1_main,BildungsCampus,Building 1 Main Entrance,entrance,299,376,1,main,true,Forum (OST)
+n_bc_2_main,BildungsCampus,Building 2 Main Entrance,entrance,315,386,2,main,true,GGS / TUM (OST)
+n_bc_3_main,BildungsCampus,Building 3 Main Entrance,entrance,347,405,3,main,true,DHBW / experimenta (OST)
+n_bc_4_main,BildungsCampus,Building 4 Main Entrance,entrance,345,367,4,main,true,DHBW (OST)
+n_bc_5_main,BildungsCampus,Building 5 Main Entrance,entrance,327,360,5,main,true,DHBW (OST)
+n_bc_6_main,BildungsCampus,Building 6 Main Entrance,entrance,216,301,6,main,true,Aula (MITTE)
+n_bc_7_main,BildungsCampus,Building 7 Main Entrance,entrance,199,305,7,main,true,aim (MITTE)
+n_bc_8_main,BildungsCampus,Building 8 Main Entrance,entrance,232,277,8,main,true,Mensa (MITTE)
+n_bc_9_main,BildungsCampus,Building 9 Main Entrance,entrance,206,270,9,main,true,DSS / SCS / TUM / Fraunhofer (MITTE)
+n_bc_10_main,BildungsCampus,Building 10 Main Entrance,entrance,253,272,10,main,true,HHN (MITTE)
+n_bc_11_main,BildungsCampus,Building 11 Main Entrance,entrance,214,247,11,main,true,Campus Founders* (MITTE)
+n_bc_12_main,BildungsCampus,Building 12 Main Entrance,entrance,267,237,12,main,true,HHN (NORD)
+n_bc_13_main,BildungsCampus,Building 13 Main Entrance,entrance,252,239,13,main,true,DHBW CAS / Café (NORD)
+n_bc_14_main,BildungsCampus,Building 14 Main Entrance,entrance,296,198,14,main,true,Seminar rooms (NORD)
+n_bc_15_main,BildungsCampus,Building 15 Main Entrance,entrance,267,198,15,main,true,Auditorium / HHN administration (NORD)
+n_bc_17_main,BildungsCampus,Building 17 Main Entrance,entrance,280,179,17,main,true,Student cafeteria / services (NORD)
+n_bc_mid_j1,BildungsCampus,Central Junction,junction,210,287,,,-,true,Between MITTE and NORD blocks
+n_bc_gate,BildungsCampus,Main Campus Gate,gate,143,284,,,-,true,Entrance from Europaplatz roundabout
